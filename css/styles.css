@@ -1,0 +1,96 @@
+body{
+    background-color:gray;
+}
+
+h1{
+    text-align: center;
+}
+h1.clear{
+    text-align: left;
+}
+
+
+ul.nav{
+    background-color: #333;
+    list-style:none;
+    margin:0;
+    padding: 0;
+    text-align:center;
+}
+li.nav{
+    display: inline;
+}
+li a.nav{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+li a:hover{
+    background: #111;
+    color: white;
+}
+img.center{
+    display: block;
+    margin: auto;
+}
+img.keyboardcss{
+    width: 600px;
+ 
+}
+div.centerall{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:-23px;
+    font-size: 17px;
+    font-family: sans-serif;
+    background-color: lightgray;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+div.info{
+    display: table;
+    margin: 0 auto;
+    font-family: cursive;
+    border-radius: 20px;
+    border-style: solid;
+    
+}
+li a.active{
+    background-color: black;
+}
+div.contactinfo{
+    text-align: right;
+}
+a.clear{
+    text-decoration: none;
+    color: black;
+}
+h4{
+    font-size: 20px;
+}
+ul.extra{
+    list-style-type: circle;
+}
+h3{
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    background-color:chartreuse;
+    font-size: 30px;
+    font-family:monospace;
+}
+h3.clear{
+    text-align: left;
+    border: none;
+    background-color: lightgray;
+    font-size: 20px  
+}
+h4.clear{
+    font-size: 17px;
+}
+
+
+
+
