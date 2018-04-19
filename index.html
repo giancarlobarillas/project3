@@ -1,54 +1,35 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title>ITMD-361 Internet Technologies and Web Design</title>  
-</head>
-<body>
-    <ul class="nav">
-        <li class="nav"><a  class="nav active" href="index.html">Home Page</a></li>
-        <li class="nav"><a class="nav" href="resume.html">Resume</a></li>
-        <li class="nav"><a class="nav"  href="htmlpractice.html">HTML Practice</a></li>
-    </ul>
-    <div class="centerall">
-        <h1>Giancarlo Barillas: Project 2</h1>
-        <img class="center" src="images/profile.jpg" alt="My Linkedin Profile Picture">
-        <h4>About Me:</h4>
-        <p> My name is Giancarlo Barillas. I am a third-year Information Technology major with a minor in Applied Mathematics. I have a strong hunger for knowledge and am always looking to see what new programing language I can learn. I also like to innovate and create new projects for myself. I was born in Downers Grove Illinois and moved to Puerto Rico when I was young.  I am bilingual and I love to be active. Tennis and Ping Pong are my two favorite sports but I am open to playing any sports.  On my free time, I am usually reading up on programming languages. The language that I am most proficient in is Java. I also know C++, SQL, HTML, CSS, and Javascript.</p>
-        <div class="info">
-            <h4>Favorite Foods</h4>
-            <ul>
-                <li>Lou malnati's Deep Dish Pizza</li>
-                <li>Oyster</li>
-                <li>Mofongo</li>
-                <li>Tacos</li>
-                <li>Ricobene's Breaded Steak Sandwich</li>
-            </ul>
-            <h4>Hobbies</h4>
-            <ul>
-                <li>Coding Projects</li>
-                <li>Reading</li>
-                <li>Practicing Tennis</li>
-                <li>Jogging Down Lakeview</li>
-                <li>Solving Logic and Math based problems</li>
-            </ul>
-        </div>
-        <h4>Books I recommend to Everyone:</h4>
-        <img src="images/pragmatic.jpg" alt="The Pragmatic Programmer image">
-        <img src="images/innovation.jpg" alt="The Innovators Dilemma">
-        <img src="images/crakingcode.jpg" alt="Cracking The Coding Interview">
-        <div>
-            <h4>Where I spent most of my life: </h4>
-            <div id="map">
-        
-            </div>
-            <button type="button">Mayaguez, Puerto Rico</button>
-            <button type="button">Naperville, Illinois</button>
-            <button type="button">Chicago, Illinois</button>
-        </div>
-    </div>
-</body>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxfql2gSwuLpkN3OXZA-VSzhDIQiFW-3A&callback=initMap"
+    async defer></script>
+  </body>
 </html>
